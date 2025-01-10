@@ -20714,7 +20714,7 @@ GameObject:
   - component: {fileID: 3783921192856125262}
   - component: {fileID: 5140261092139733188}
   m_Layer: 0
-  m_Name: WorldTest
+  m_Name: WorldExample
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 428156540304137459}
   - component: {fileID: -691906020464924305}
   m_Layer: 0
-  m_Name: Enemy_Level_0
+  m_Name: Enemy_Level_1_Example
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,7 +40,7 @@ Transform:
   - {fileID: 7187117031074920848}
   - {fileID: 3998129072710885122}
   - {fileID: 4080295982512323839}
-  - {fileID: 651804832205852202}
+  - {fileID: 3342162935698768669}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &62190372099472015
@@ -177,19 +177,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94a3ff0e686146e0944d63c97b7d996f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 1
-  maxBullets: 1
-  bulletForce: 16
   hpBar: {fileID: 1702281777764654563}
+  maxHp: 2
   bulletPrefab: {fileID: 8574481047457585350, guid: 16b5bf80d1a524ee8874b71bc34df0c4, type: 3}
   gunHead: {fileID: 6712933133963365040}
+  maxBullets: 5
   magazine: {fileID: 7635416894888338393}
-  hitEffect: {fileID: 0}
-  Id: 0
+  bulletForce: 16
   agent: {fileID: 3040788099975748063}
   rb: {fileID: 428156540304137459}
-  attackInterval: 2
-  attackDistance: 20
+  attackInterval: 1.5
+  attackDistance: 25
 --- !u!1 &1882869994614335200
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,7 +1661,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &5973330596726624875
+--- !u!1001 &8471159807784705884
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1677,30 +1675,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5112089300702697801, guid: 763f6d4d7caec4cb28f88c96c314d19f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5112089300702697801, guid: 763f6d4d7caec4cb28f88c96c314d19f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5112089300702697801, guid: 763f6d4d7caec4cb28f88c96c314d19f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0.6666666
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5112089300702697801, guid: 763f6d4d7caec4cb28f88c96c314d19f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5112089300702697801, guid: 763f6d4d7caec4cb28f88c96c314d19f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.99999994
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5112089300702697801, guid: 763f6d4d7caec4cb28f88c96c314d19f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6018510801776803939, guid: 763f6d4d7caec4cb28f88c96c314d19f, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6624273389586455617, guid: 763f6d4d7caec4cb28f88c96c314d19f, type: 3}
@@ -1840,10 +1834,10 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 763f6d4d7caec4cb28f88c96c314d19f, type: 3}
---- !u!224 &651804832205852202 stripped
+--- !u!224 &3342162935698768669 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6624273389586455617, guid: 763f6d4d7caec4cb28f88c96c314d19f, type: 3}
-  m_PrefabInstance: {fileID: 5973330596726624875}
+  m_PrefabInstance: {fileID: 8471159807784705884}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9198860119087046300
 PrefabInstance:
