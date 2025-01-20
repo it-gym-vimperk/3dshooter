@@ -118,11 +118,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc41259f65f84b3ab09ad09fb16057be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Id: 0
   CanHurt: 0
   SourceTag: 
   damage: 1
   hitForce: 3
   minFlyingSpeed: 2
-  flyingMaterial: {fileID: 2100000, guid: 4d04b184d91384724982cdfe12708086, type: 2}
+  flyingMaterial: {fileID: 2100000, guid: 609dba4ebe25f47bcac7b9b0638c161c, type: 2}
   collectedMaterial: {fileID: 2100000, guid: 309c007a95f1c4f3487ac4632f28cd5e, type: 2}
   renderer: {fileID: 1774108549640735594}
