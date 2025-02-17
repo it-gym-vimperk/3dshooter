@@ -15,10 +15,14 @@ public class Player : Character
     [SerializeField] private float rotationSpeed; // Rychlost otáčení hráče.
     [SerializeField] private float gravity = 0.5f; // Gravitace ovlivňující hráče.
 
-    // Inicializace, skryje okno pro konec hry.
-    private void Awake()
+     private void Awake()
+     {
+         gameOverWindow.SetActive(false);
+     }
+    
+    private void OnDestroy()
     {
-        gameOverWindow.SetActive(false);
+        gameOverWindow.SetActive(true);
     }
 
     // Hlavní logika volaná v každém snímku.
@@ -82,11 +86,7 @@ public class Player : Character
     }
 
     // Metoda volaná při zničení hráče (např. při jeho smrti).
-    private void OnDestroy()
-    {
-        // Zobrazí okno pro konec hry.
-        gameOverWindow.SetActive(true);
-    }
+   
 
     // Metoda volaná při vstupu do kolizní oblasti.
     private void OnTriggerEnter(Collider other)
